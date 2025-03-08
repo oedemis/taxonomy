@@ -1,7 +1,6 @@
 version: 3
 task_description: accurately interpret and extract information from MRI system error condition tables
 created_by: oedemis
-
 seed_examples:
   - context: |
       | Error Condition | Diagnostic Indicators | Resolution Procedure |
@@ -14,7 +13,6 @@ seed_examples:
       Can you list the full error condition information for Compressor Failure from the service manual?
     answer: |
       According to the service manual, for the error condition "Compressor Failure", the diagnostic indicators are "Low pressure differential (<200 psig), abnormal compressor noise, oil contamination in helium lines" and the resolution procedure is "Replace compressor (PN: QS7T-HC-310), flush helium lines, install new adsorbers, recondition cold head".
-
   - context: |
       | Error Condition | Diagnostic Indicators | Resolution Procedure |
       |-----------------|-------------------|------------|
@@ -26,7 +24,6 @@ seed_examples:
       What are the diagnostic indicators for Cold Head Failure?
     answer: |
       The diagnostic indicators for Cold Head Failure are: Second-stage temp >5.5K, helium pressure >7 psig, and drive motor operation normal.
-
   - context: |
       | Error Condition | Diagnostic Indicators | Resolution Procedure |
       |-----------------|-------------------|------------|
@@ -38,7 +35,6 @@ seed_examples:
       What part number is needed to replace temperature sensors during Sensor Malfunction?
     answer: |
       The part number needed to replace temperature sensors during Sensor Malfunction is PN: QS7T-TS-315.
-
   - context: |
       | Error Condition | Diagnostic Indicators | Resolution Procedure |
       |-----------------|-------------------|------------|
@@ -50,7 +46,6 @@ seed_examples:
       Which error condition is characterized by ice formation on the cold head?
     answer: |
       Vacuum Degradation is characterized by ice formation on the cold head, along with rapid temperature fluctuations and decreased hold time.
-
   - context: |
       | Error Condition | Diagnostic Indicators | Resolution Procedure |
       |-----------------|-------------------|------------|
@@ -62,7 +57,6 @@ seed_examples:
       If I observe erratic temperature readings that correlate with gradient activity, what is the error condition and how should I resolve it?
     answer: |
       The error condition is Sensor Malfunction. To resolve it, you should replace temperature sensors (PN: QS7T-TS-315), verify sensor wiring isolation from gradient fields, and update calibration tables.
-
   - context: |
       | Error Condition | Diagnostic Indicators | Resolution Procedure |
       |-----------------|-------------------|------------|
@@ -74,7 +68,6 @@ seed_examples:
       What procedures are necessary after replacing a compressor in a QuantumScape 7T MRI system?
     answer: |
       After replacing a compressor (PN: QS7T-HC-310) in a QuantumScape 7T MRI system, you must also flush helium lines, install new adsorbers, and recondition the cold head according to the service manual's resolution procedure for Compressor Failure.
-  
   - context: |
       | Error Condition | Diagnostic Indicators | Resolution Procedure |
       |-----------------|-------------------|------------|
