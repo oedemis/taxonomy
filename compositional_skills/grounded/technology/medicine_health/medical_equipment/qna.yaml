@@ -83,3 +83,4 @@ seed_examples:
       - Compressor Failure: Low pressure differential (<200 psig), abnormal compressor noise, oil contamination in helium lines
       - Vacuum Degradation: Ice formation on cold head, rapid temperature fluctuations, decreased hold time
       - Sensor Malfunction: Erratic temperature readings, discrepancy between sensors at same location, correlation with gradient activity
+
