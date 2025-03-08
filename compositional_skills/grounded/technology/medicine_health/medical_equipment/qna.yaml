@@ -1,5 +1,5 @@
 version: 3
-domain: medical_equipment
+task_description: accurately interpret and extract information from MRI system error condition tables
 created_by: oedemis
 
 seed_examples:
