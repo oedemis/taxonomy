@@ -1,8 +1,7 @@
-created_by: quantum-med-tech
+created_by: ooedemis
 version: 3
 domain: medical_equipment
 document_outline: Technical Service & Maintenance Compendium for QuantumScape 7T MRI Systems
-
 seed_examples:
   - context: >-
       The QuantumScape 7T utilizes a Gifford-McMahon cryocooler with dual-stage refrigeration operating at 4.2K second-stage temperature for zero helium boil-off operation. First-stage cooling (40-60K) provides thermal radiation shielding while second-stage cooling maintains helium recondensation at 99.9% efficiency under normal operating conditions.
@@ -13,7 +12,6 @@ seed_examples:
         answer: The QuantumScape 7T utilizes a Gifford-McMahon cryocooler with dual-stage refrigeration.
       - question: What is the normal second-stage temperature for QuantumScape 7T operation?
         answer: 4.2K second-stage temperature for zero helium boil-off operation.
-
   - context: >-
       The helium recondensation system employs copper-finned condensers with adsorber-based purification and redundant compressors maintaining 280-330 psig operating pressure. Cold head reciprocating frequency maintains 60±2 cycles per minute with beryllium-copper displacer technology for extended maintenance intervals of 20,000 operating hours.
     questions_and_answers:
@@ -23,7 +21,6 @@ seed_examples:
         answer: Beryllium-copper displacer technology
       - question: What is the maintenance interval for the cold head?
         answer: Extended maintenance intervals of 20,000 operating hours
-
   - context: >-
       Optimal cryogenic performance requires helium pressure between 4-6 psig with compressor input/output differential of 230-270 psig at steady-state operation. Cold head temperature sensors must indicate 40-60K at first stage and 4.0-5.0K at second stage, with values exceeding these ranges indicating imminent recondensation failure requiring immediate mitigation.
     questions_and_answers:
@@ -33,7 +30,6 @@ seed_examples:
         answer: Helium pressure between 4-6 psig
       - question: What indicates an imminent recondensation failure?
         answer: Cold head temperature sensors showing values outside the ranges of 40-60K at first stage and 4.0-5.0K at second stage
-
   - context: >-
       HE-001 (Helium Level Critical) indicates abnormal boil-off exceeding recondensation capacity, typically from cold head failure or adsorber saturation. GR-245 (Gradient Overtemp) may manifest during cryogenic issues due to increased helium gas cooling requirements for gradient shielding. QU-523 (Quench Detection) may trigger from rapid temperature fluctuations even without actual quench events.
     questions_and_answers:
@@ -43,7 +39,6 @@ seed_examples:
         answer: GR-245 (Gradient Overtemp) may manifest during cryogenic issues due to increased helium gas cooling requirements for gradient shielding.
       - question: Can QU-523 trigger without an actual quench event?
         answer: Yes, QU-523 (Quench Detection) may trigger from rapid temperature fluctuations even without actual quench events.
-
   - context: >-
       For temperature fluctuations between 2-4K, first verify cold head drive frequency (60±2 cpm) and compressor pressure differential (230-270 psig). Inspect cryocooler for ice formation indicating vacuum degradation requiring cryostat service. Check for synchronization with gradient activity indicating electromagnetic interference with temperature sensors.
     questions_and_answers:
@@ -53,7 +48,6 @@ seed_examples:
         answer: Ice formation indicates vacuum degradation requiring cryostat service.
       - question: What could cause temperature readings to synchronize with gradient activity?
         answer: Synchronization with gradient activity indicates electromagnetic interference with temperature sensors.
-
   - context: >-
       Quarterly maintenance includes helium compressor oil level verification (ISO VG 68 grade), adsorber regeneration cycling, and cold head drive mechanism inspection. Helium gas analysis should show >99.999% purity with oxygen contamination below 5 ppm to prevent superconducting filament oxidation and progressive degradation.
     questions_and_answers:
@@ -63,7 +57,6 @@ seed_examples:
         answer: Quarterly maintenance
       - question: What is the maximum acceptable oxygen contamination in the helium gas?
         answer: Oxygen contamination should be below 5 ppm
-
   - context: >-
       Following cryogenic system repair, validation requires 72-hour stability monitoring with helium level and pressure recording at 30-minute intervals. Temperature mapping across all monitoring points must show <0.1K variation over a 24-hour period with no correlation to magnet room HVAC cycling or gradient duty cycle.
     questions_and_answers:
@@ -73,7 +66,6 @@ seed_examples:
         answer: At 30-minute intervals
       - question: What is the maximum acceptable temperature variation during the 24-hour monitoring period?
         answer: <0.1K variation
-
   - context: >-
       Service activities must comply with FDA 21 CFR 820 Quality System Regulation with comprehensive documentation of all cryogenic maintenance. Critical components designated as "certification critical" must use only OEM-approved parts to maintain device certification and regulatory compliance.
     questions_and_answers:
@@ -103,7 +95,6 @@ seed_examples:
         answer: CryoWatch telemetry provides real-time monitoring of critical parameters with predictive analytics for early intervention before clinical impact occurs.
       - question: What type of encryption is used for remote diagnostics?
         answer: 256-bit AES encryption
-
 document:
   repo: https://github.com/oedemis/medicalequipment_knowledge
   commit: 10b04091a5844858031b1a5f440d3b0051322187
